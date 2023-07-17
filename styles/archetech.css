@@ -222,6 +222,21 @@ main {
 }
 
 
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: #FFF4E7;
+    margin-bottom: 130px;
+    margin-right: 240px;
+    margin-left: 240px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.f-text {
+    color: #424242;
+}
 
 
 /* tablet or medium devices */
@@ -319,5 +334,15 @@ main {
 
     .facts-card-container {
         gap: 20px;
+    }
+
+    footer {
+        margin: 0px;
+        padding: 0;
+    }
+
+    .f-text {
+        /* margin: 30px; */
+        padding: 14px;
     }
 }
