@@ -7,7 +7,14 @@
     font-family: 'Great Vibes', cursive;
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
+
+.text-light-gray {
+    color: #727272;
+}
+
 
 .btn-primary {
     color: #FFF;
@@ -18,6 +25,7 @@
     padding: 20px 25px;
     font-size: 1.25rem;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 
@@ -68,9 +76,6 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
-    color: #727272;
-}
 
 .banner img {
     margin-top: 20px;
@@ -78,46 +83,10 @@ nav li a {
 }
 
 
-/* Responsive styles */
-/* Mobile devices */
-@media screen and (max-width: 576px) {
-    * {
-        font-family: 'Great Vibes', cursive;
-        font-family: 'Lato', sans-serif;
-        font-family: 'Work Sans', sans-serif;
-        /* margin: auto; */
-    }
-
-    header {
-        padding: 20px;
-    }
-
-
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px;
-        ;
-    }
-
-    nav>ul {
-        margin: 0px;
-        padding: 0px;
-        gap: 20px;
-    }
-
-    nav li {
-        margin: 0px;
-
-        padding: 0px;
-    }
-
-}
-
 /* Main styles */
 main {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .teams-container {
@@ -153,7 +122,9 @@ main {
 /* tablet or medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
+
+    nav,
+    .teams-container {
         flex-direction: column;
 
     }
@@ -166,4 +137,52 @@ main {
         font-size: 2rem;
 
     } */
+}
+
+
+
+/* Responsive styles */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    * {
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        /* margin: auto; */
+    }
+
+    header {
+        padding: 20px;
+    }
+
+
+    nav,
+    .teams-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    nav>ul {
+        margin: 0px;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    nav li {
+        margin: 0px;
+
+        padding: 0px;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
